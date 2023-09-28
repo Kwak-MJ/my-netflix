@@ -31,12 +31,20 @@ function MovieInfo() {
     setCredit(json.cast);
   }
 
+  useEffect(() => {
+    getInfo();
+  },)
+
+  useEffect(() => {
+    getCredit();
+  },)
+
   const imgChar = () => {
     const imgArray = [];
     for (let i = 0; i < 5; i++) {
       const imgPath = credit[i].profile_path;
       const imageChar = `https://image.tmdb.org/t/p/original${imgPath}`;
-      imgArray.push(<img ref={ref} className={styles.charImg} key={credit[i].id} src={imageChar} />);
+      imgArray.push(<img ref={ref} className={styles.charImg} key={credit[i].id} alt={credit[i].name} src={imageChar} />);
     }
     return imgArray;
   }
@@ -70,15 +78,6 @@ function MovieInfo() {
 
 
   const imageUrl = `https://image.tmdb.org/t/p/original${info.poster_path}`;
-
-
-  useEffect(() => {
-    getInfo();
-  }, [])
-
-  useEffect(() => {
-    getCredit();
-  }, [])
 
   return (
     <div>
