@@ -1,4 +1,5 @@
 {
+  "hompage": "https://Kwak-MJ.github.io/netflixClone/",
   "name": "netflix",
   "version": "0.1.0",
   "private": false,
@@ -42,6 +43,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "hompage": "https://Kwak-MJ.github.io/netflixClone/"
+  }
 }
