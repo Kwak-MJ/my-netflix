@@ -1,0 +1,42 @@
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navLeft {
+  margin: 23px 0 20px 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.navLeftItems {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#logo {
+  width: 87px;
+  height: 23px;
+  margin-right: 10px;
+}
+
+.navRight {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 40px 0 0;
+}
+
+#search,
+#notif {
+  margin-right: 10px;
+  padding: 4px;
+}
+
+#user {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 30%;
+}
