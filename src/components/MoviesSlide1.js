@@ -110,7 +110,7 @@ function MoviesSlide1() {
             {movies.map((movie) => {
               const imageUrl = `https://image.tmdb.org/t/p/original${movie.poster_path}`;
               return (
-                <Link to={`/movies/${movie.id}`} key={movie.id}>
+                <Link to={process.env.PUBLIC_URL + `/movies/${movie.id}`} key={movie.id}>
                   <div className={styles.eachMovie}>
                     <img className={styles.moviePoster} src={imageUrl} alt="moviePoster" />
                     <div className={styles.posterInfo}>
