@@ -10,10 +10,10 @@ function App() {
     <div>
       <Navigation />
       <Routes>
-        <Route path='/movies/:id' element={<MovieInfo />} />
-        <Route path="/series" element={<Series />} />
-        <Route path="/movies" element={<Movies />} />
-        <Route path="/" element={<Home />} />
+        <Route path={process.env.PUBLIC_URL + "/movies/:id"} element={<MovieInfo />} />
+        <Route path={process.env.PUBLIC_URL + "/series"} element={<Series />} />
+        <Route path={process.env.PUBLIC_URL + "/movies"} element={<Movies />} />
+        <Route path={process.env.PUBLIC_URL + "/"} element={<Home />} />
       </Routes>
     </div>
   );
