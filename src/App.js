@@ -10,10 +10,10 @@ function App() {
     <div>
       <Navigation />
       <Routes>
-        <Route path="/movies/:id" element={<MovieInfo />} />
-        <Route path="/series" element={<Series />} />
-        <Route path="/movies" element={<Movies />} />
-        <Route path="/" element={<Home />} />
+        <Route path="my-netflix/movies/:id" element={<MovieInfo />} />
+        <Route path="my-netflix/series" element={<Series />} />
+        <Route path="my-netflix/movies" element={<Movies />} />
+        <Route path="/my-netflix" element={<Home />} />
       </Routes>
     </div>
   );
