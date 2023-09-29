@@ -8,9 +8,9 @@ function Navigation() {
     <div className={styles.navBar}>
       <div className={styles.navLeft}>
         <img id={styles.logo} src={netflixLogo} alt='netflixLogo' />
-        <Link to='/my-netflix' className={styles.navLeftItems}>홈</Link>
-        <Link to='/my-netflix/movies' className={styles.navLeftItems}>영화</Link>
-        <Link to='/my-netflix/series' className={styles.navLeftItems}>시리즈</Link>
+        <Link to={process.env.PUBLIC_URL} className={styles.navLeftItems}>홈</Link>
+        <Link to={process.env.PUBLIC_URL + "/movies"} className={styles.navLeftItems}>영화</Link>
+        <Link to={process.env.PUBLIC_URL + "/series"} className={styles.navLeftItems}>시리즈</Link>
       </div>
       <div className={styles.navRight}>
         <span className="material-symbols-outlined" id={styles.search}>
