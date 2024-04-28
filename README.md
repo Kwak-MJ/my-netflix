@@ -2,9 +2,9 @@
 
 This is my side project for netflix clone to practice React framework.
 
-By using IMDB api, this page shows movie information such as title, rate, overview and name of actors.
-Also I used slick to scroll the thumbnail in the main page.
-For last, this is a responsive web for mobile users. (Look at the last photo)
+1. By using IMDB api, this page shows movie information such as title, rate, overview and name of actors.
+1. Also I used slick to scroll the thumbnail in the main page.
+1. For last, this is a responsive web for mobile users. (Look at the last photo)
 
 
 
